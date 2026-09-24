@@ -781,31 +781,32 @@ img {
 
     /* MOBILE MENU */
 
-    .menu-showcase {
-        display: flex;
-        flex-direction: column;
-        gap: 16px;
+    @media (max-width: 650px) {
+
+    .menu-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+        margin-top: 45px;
     }
 
-    .showcase-image {
+    .menu-card-image {
+        aspect-ratio: auto;
+    }
+
+    .menu-card-image img {
         width: 100%;
-        height: 210px;
+        height: auto;
+        object-fit: contain;
     }
 
-    .showcase-caption {
-        left: 17px;
-        right: 17px;
-        bottom: 17px;
-        gap: 3px;
+    .menu-card-content {
+        padding: 22px 20px 25px;
     }
 
-    .showcase-caption span {
-        font-size: 7px;
+    .menu-card h3 {
+        font-size: 32px;
     }
-
-    .showcase-caption strong {
-        font-size: 22px;
-    }
+}
 
 
     /* ORDER CARD */
